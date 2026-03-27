@@ -66,14 +66,6 @@ body {
     background-color: #081b29;
 }
 
-.home-content {
-    max-width: 100%;
-    display: inline-block;
-    margin-top: 10%;
-    padding: 8px 15px;
-    align-content: center;
-}
-
 .home-content h1 {
     position: relative;
     font-size: 40px;
@@ -151,64 +143,8 @@ body {
     z-index: 2;
 }
 
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    background: #00abf0;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(1) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #081b29;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00abf0;
-    z-index: -1;
-}
-
-.btn-box a:hover {
-    color: #081b29;
-}
-
 .home-sci {
+    margin-top: 30%;
     position: relative;
     bottom: 40px;
     width: 150px;
@@ -273,6 +209,61 @@ body {
 .foto {
     opacity: 0.5;
     position: relative;
+}
+
+.home .box {
+    flex: 1 1 30rem;
+    background: #031928;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #081b29;
+    height: auto;
+    transition: .5s ease;
+}
+
+.box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    background: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home-content .box:hover {
+    border-color: #00abf0;
+    transform: scale(1.02);
+}
+
+.btn {
+    display: flex;
+    padding: 1rem 2.7rem;
+    background-color: #00abf0;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #00abf0;
+    font-size: 1.6rem;
+    color: #081b29;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ANIMATIONS KEYFRAMES */ 
